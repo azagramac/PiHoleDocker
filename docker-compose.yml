@@ -1,0 +1,34 @@
+version: '3.2'
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: "128M"
+        reservations:
+          cpus: "0.25"
+          memory: "64M"
+    hostname: pihole
+    restart: always
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80/tcp"
+      - "443:443/tcp"
+    environment:
+      TZ: Europe/Madrid
+      INTERFACE: eth0
+      VIRTUAL_HOST: pihole
+      PROXY_LOCATION: pihole
+      ServerIP: YOUR_IP
+      DNS1: 1.1.1.3
+      DNS2: 9.9.9.9
+    volumes:
+      - '/home/pi/pihole/etc-pihole/:/etc/pihole/'
+      - '/home/pi/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
+    cap_add:
+      - NET_ADMIN
