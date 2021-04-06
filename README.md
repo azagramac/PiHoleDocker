@@ -1,4 +1,4 @@
-## Docker Pi-Hole for RaspberryPi
+## Docker Pi-Hole for RaspberryPi :strawberry: / NanoPi NEO :snake:
 
 <p align="center">
         <img src="icon.png" alt="PNG" height="300px" />
