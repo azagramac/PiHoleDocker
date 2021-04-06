@@ -14,10 +14,10 @@
     sudo apt upgrade -y
     sudo apt install -y libffi-dev libssl-dev python3 python3-pip
     sudo curl -sSL https://get.docker.com | sh
-    sudo usermod -aG docker pi
+    sudo usermod -aG docker $USER
     sudo apt install -y docker-compose
 
-### Add lines in /boot/config.txt (RaspberryPi 3)
+### Add lines in /boot/config.txt (only RaspberryPi 3)
     arm_freq=1200
     arm_freq_min=700
     core_freq=400
