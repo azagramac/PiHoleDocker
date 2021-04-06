@@ -5,8 +5,8 @@
 </p>
 
 ### Requeriments
-- Raspberry Pi
-- Raspbian OS
+- Raspberry Pi / NanoPi NEO2 or NEO3
+- Raspbian OS / DietPi
 - Service docker running
 
 ### Install Docker
