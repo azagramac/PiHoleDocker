@@ -21,7 +21,7 @@ services:
       INTERFACE: eth0
       VIRTUAL_HOST: pihole
       PROXY_LOCATION: pihole
-      ServerIP: 172.16.1.5
+      ServerIP: YOUR_IP
       DNS1: 1.1.1.3
       DNS2: 9.9.9.9
     volumes:
