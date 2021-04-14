@@ -7,10 +7,7 @@ services:
       resources:
         limits:
           cpus: "0.50"
-          memory: "128M"
-        reservations:
-          cpus: "0.25"
-          memory: "64M"
+          memory: "256M"
     hostname: pihole
     restart: always
     ports:
@@ -24,11 +21,11 @@ services:
       INTERFACE: eth0
       VIRTUAL_HOST: pihole
       PROXY_LOCATION: pihole
-      ServerIP: YOUR_IP
+      ServerIP: 172.16.1.5
       DNS1: 1.1.1.3
       DNS2: 9.9.9.9
     volumes:
-      - '/home/pi/pihole/etc-pihole/:/etc/pihole/'
-      - '/home/pi/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
+      - '/root/docker/pihole/etc-pihole/:/etc/pihole/'
+      - '/root/docker/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
     cap_add:
       - NET_ADMIN
