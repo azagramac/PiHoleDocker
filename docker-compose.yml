@@ -3,11 +3,6 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
-    deploy:
-      resources:
-        limits:
-          cpus: "0.50"
-          memory: "256M"
     hostname: pihole
     restart: always
     ports:
@@ -21,9 +16,9 @@ services:
       INTERFACE: eth0
       VIRTUAL_HOST: pihole
       PROXY_LOCATION: pihole
-      ServerIP: YOUR_IP
-      DNS1: 1.1.1.3
-      DNS2: 9.9.9.9
+      ServerIP: IP_SERVER
+      DNS1: 1.1.1.1
+      DNS2: 1.0.0.1
     volumes:
       - '/root/docker/pihole/etc-pihole/:/etc/pihole/'
       - '/root/docker/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
