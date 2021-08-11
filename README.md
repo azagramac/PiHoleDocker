@@ -43,39 +43,35 @@ Those who want to get started quickly and conveniently may install Pi-hole using
 
     curl -sSL https://install.pi-hole.net | bash
 
-### Lists to add to Adlist group management
-    https://dbl.oisd.nl
-    https://sysctl.org/cameleon/hosts
-    https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-    https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-    http://winhelp2002.mvps.org/hosts.txt
-    https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-    https://someonewhocares.org/hosts/hosts
-    https://adaway.org/hosts.txt
-    https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
-    https://v.firebog.net/hosts/Easyprivacy.txt
-    https://v.firebog.net/hosts/AdguardDNS.txt
-    https://v.firebog.net/hosts/Easylist.txt
-    https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
-    https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
-    https://www.malwaredomainlist.com/hostslist/hosts.txt
-    https://phishing.army/download/phishing_army_blocklist_extended.txt
-    https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
-    https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-    https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
-    https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
-    https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
-    https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
-    https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
-    https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
-    https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
-    https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-    https://raw.githubusercontent.com/AzagraMac/PiHoleDocker/master/list/urlhaus-filter-domains.txt
-    https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
-    https://raw.githubusercontent.com/AzagraMac/PiHoleDocker/master/list/outapzazaList.txt
-    https://raw.githubusercontent.com/outapzaza/blocklist/master/fingerprintblock.txt
-    https://raw.githubusercontent.com/outapzaza/blocklist/master/serverblocklist.txt
-    https://raw.githubusercontent.com/AzagraMac/PiHoleDocker/master/list/outapzazaRegex.txt
-    https://raw.githubusercontent.com/AzagraMac/PiHoleDocker/master/list/NSABlocklist.txt
-    https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
-    https://raw.githubusercontent.com/AzagraMac/PiHoleDocker/master/list/AndroidTracking.txt
+## Main White Lists
+| List | Original | No IP | DNSMASQ | AdGuard <br> <sup>BETA</sup> | Description | Sponsor<sup>&#8224;</sup> |
+| -- | -- | -- | -- | -- | -- | -- |
+| Whitelist | [Link](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt) |  |  |  |  |  |
+
+## Main Black Lists
+
+| List | Original | No IP | DNSMASQ | AdGuard <br> <sup>BETA</sup> | Description | Sponsor<sup>&#8224;</sup> |
+| -- | -- | -- | -- | -- | -- | -- |
+| Oisd | [Link](https://dbl.oisd.nl) | - | - | - | This list prioritizes functionality over blocking |[oisd.nl](https://oisd.nl/)|
+| Abuse | [Link](https://blocklistproject.github.io/Lists/abuse.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/abuse-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/abuse-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/abuse-ags.txt) | Lists of sites created to deceive |[magicminiman.com](https://magicminiman.com)|
+| Ads | [Link](https://blocklistproject.github.io/Lists/ads.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/ads-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/ads-ags.txt) | Ad servers / sites | [FOIA.Services](https://foia.services) |
+| Crypto | [Link](https://blocklistproject.github.io/Lists/crypto.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/crypto-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/crypto-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/crypto-ags.txt) | Crypto / cryptojacking based sites <br> <sup>Can break normal "good" crypto sites</sup> |  |
+| Drugs | [Link](https://blocklistproject.github.io/Lists/drugs.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/drugs-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/drugs-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/drugs-ags.txt) | RE sites that deal with illegal drugs <br><sub>Including RX drugs illegal to posses in the US</sub> |  |
+| Everything | [Link](https://blocklistproject.github.io/Lists/everything.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/everything-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/everything-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/everything-ags.txt) | List including all non beta list domains |  |
+| WhatsApp | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/whatsapp.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/whatsapp.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/whatsapp.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/whatsapp.txt) | Block ads WhatsApp | - |  
+| Youtube | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/youtube.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/youtube.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/youtube.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/youtube.txt) | Block ads youtube | - |  
+| Fraud | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt) |  |  |  
+| Crypto | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt) | [Link](https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt) |  |  |   
+| Facebook | [Link](https://blocklistproject.github.io/Lists/facebook.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/facebook-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/facebook-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/facebook-ags.txt) | Block FB and FB related / owned services |  |
+| Fraud | [Link](https://blocklistproject.github.io/Lists/fraud.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/fraud-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/fraud-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/fraud-ags.txt) | Sites create to fraud |  |
+| Gambling | [Link](https://blocklistproject.github.io/Lists/gambling.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/gambling-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/gambling-ags.txt) | All gambling based site legit and illegal |  |
+| Malware | [Link](https://blocklistproject.github.io/Lists/malware.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/malware-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/malware-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/malware-ags.txt) | Known sites that host malware |  |
+| Phishing | [Link](https://blocklistproject.github.io/Lists/phishing.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/phishing-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/phishing-ags.txt) | Sites created to phish info |  |
+| Piracy | [Link](https://blocklistproject.github.io/Lists/piracy.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/piracy-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/piracy-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/piracy-ags.txt) | Knows sites that allow for illegal downloads |  |
+| Porn | [Link](https://blocklistproject.github.io/Lists/porn.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/porn-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/porn-ags.txt) | Porn or sites that promote porn | [W1T3H4T](https://www.patreon.com/user/creators?u=26512074) |
+| Ransomware | [Link](https://blocklistproject.github.io/Lists/ransomware.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/ransomware-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/ransomware-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/ransomware-ags.txt) | Known sites that host or contain ransomware |  |
+| Redirect | [Link](https://blocklistproject.github.io/Lists/redirect.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/redirect-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/redirect-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/redirect-ags.txt) | Sites that redirect your from your intended site |  |
+| Scam | [Link](https://blocklistproject.github.io/Lists/scam.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/scam-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/scam-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/scam-ags.txt) | Sites that intend to scam |  |
+| TikTok | [Link](https://blocklistproject.github.io/Lists/tiktok.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/tiktok-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/tiktok-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/tiktok-ags.txt) | Copy and pasted into your device |  |
+| Torrent | [Link](https://blocklistproject.github.io/Lists/torrent.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/torrent-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/torrent-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/torrent-ags.txt) | Torrent directory <br> <sub>Will likely block legit torrent sites used for legal software download</sub> |  |
+| Tracking | [Link](https://blocklistproject.github.io/Lists/tracking.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/tracking-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/tracking-ags.txt) | Sites dedicated to tracking and gathering visitor info | [FOIA.Services](https://foia.services) |   
