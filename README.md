@@ -17,19 +17,11 @@
     sudo usermod -aG docker $USER
     sudo apt install -y docker-compose
 
-### Add lines in /boot/config.txt (only RaspberryPi 3)
-    arm_freq=1200
-    arm_freq_min=700
-    core_freq=400
-    core_freq_min=250
-    sdram_freq=450
-    sdram_freq_min=400
-
 ### Edit vars in docker-compose.yml
 Edit the following variables, with the correct interface and IP of the RasPi.
 
     INTERFACE:
-    ServerIP:
+    WEBPASSWORD:
 
 
 ### Running
@@ -38,10 +30,6 @@ Edit the following variables, with the correct interface and IP of the RasPi.
 ### Check
     docker ps -a
 
-### One-Step Automated Install mode native
-Those who want to get started quickly and conveniently may install Pi-hole using the following command:
-
-    curl -sSL https://install.pi-hole.net | bash
 
 ## Main White Lists
 | List | Original | No IP | DNSMASQ | AdGuard <br> <sup>BETA</sup> | Description | Sponsor<sup>&#8224;</sup> |
@@ -52,6 +40,7 @@ Those who want to get started quickly and conveniently may install Pi-hole using
 
 | List | Original | No IP | DNSMASQ | AdGuard <br> <sup>BETA</sup> | Description | Sponsor<sup>&#8224;</sup> |
 | -- | -- | -- | -- | -- | -- | -- |
+| AdBlock's | [Link](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt) | - | - | - | From D3Hosts, [Link](https://d3ward.github.io/toolz/adblock.html)
 | Oisd | [Link](https://dbl.oisd.nl) | - | - | - | This list prioritizes functionality over blocking |[oisd.nl](https://oisd.nl/)|
 | Abuse | [Link](https://blocklistproject.github.io/Lists/abuse.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/abuse-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/abuse-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/abuse-ags.txt) | Lists of sites created to deceive |[magicminiman.com](https://magicminiman.com)|
 | Ads | [Link](https://blocklistproject.github.io/Lists/ads.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/ads-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/ads-ags.txt) | Ad servers / sites | [FOIA.Services](https://foia.services) |
