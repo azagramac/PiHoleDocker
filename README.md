@@ -40,7 +40,7 @@ Edit the following variables, with the correct interface and IP of the RasPi.
 
 | List | Original | No IP | DNSMASQ | AdGuard <br> <sup>BETA</sup> | Description | Sponsor<sup>&#8224;</sup> |
 | -- | -- | -- | -- | -- | -- | -- |
-| AdBlock's | [Link](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt) | - | - | - | From D3Hosts, [Link](https://d3ward.github.io/toolz/adblock.html)
+| AdBlock's | [Link](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt) | - | - | - | List to block advertising  | [Link](https://d3ward.github.io/toolz/adblock.html)
 | Oisd | [Link](https://dbl.oisd.nl) | - | - | - | This list prioritizes functionality over blocking |[oisd.nl](https://oisd.nl/)|
 | Abuse | [Link](https://blocklistproject.github.io/Lists/abuse.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/abuse-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/abuse-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/abuse-ags.txt) | Lists of sites created to deceive |[magicminiman.com](https://magicminiman.com)|
 | Ads | [Link](https://blocklistproject.github.io/Lists/ads.txt) | [Link](https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt) | [Link](https://blocklistproject.github.io/Lists/dnsmasq-version/ads-dnsmasq.txt) | [Link](https://blocklistproject.github.io/Lists/adguard/ads-ags.txt) | Ad servers / sites | [FOIA.Services](https://foia.services) |
