@@ -33,7 +33,7 @@ services:
       DNS2: ''
       DNSMASQ_LISTENING: all
       IPv6: 'false'
-      WEBPASSWORD: YOUR_PASSWORD
+      WEBPASSWORD: YOUR_PASSWD
     networks:
       pihole_net:
         ipv4_address: 10.0.0.3
