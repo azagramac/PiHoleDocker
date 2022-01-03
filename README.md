@@ -20,8 +20,8 @@
 ### Edit vars in docker-compose.yml
 Edit the following variables, with the correct interface and IP of the RasPi.
 
-    INTERFACE:
-    WEBPASSWORD:
+    INTERFACE: eth0
+    WEBPASSWORD: YOUR_PASSWD
 
 
 ### Running
