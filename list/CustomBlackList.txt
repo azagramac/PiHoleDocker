@@ -6,6 +6,13 @@
 
 ## Custom ##
 0.0.0.0 samsungknox.com
+0.0.0.0 eu01.manage.samsungknox.com
+0.0.0.0 eu02.manage.samsungknox.com
+0.0.0.0 eu03.manage.samsungknox.com
+0.0.0.0 eu04.manage.samsungknox.com
+0.0.0.0 eu05.manage.samsungknox.com
+0.0.0.0 tms-eu.manage.samsungknox.com
+0.0.0.0 crs.manage.samsungknox.com
 ############
 
 0.0.0.0 a.ads1.msn.com
