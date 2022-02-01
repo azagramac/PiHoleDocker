@@ -6,13 +6,6 @@
 
 ## Custom ##
 @@||samsungknox.com^
-@@||manage.samsungknox.com^
-0.0.0.0 eu02.manage.samsungknox.com
-0.0.0.0 eu03.manage.samsungknox.com
-0.0.0.0 eu04.manage.samsungknox.com
-0.0.0.0 eu05.manage.samsungknox.com
-0.0.0.0 tms-eu.manage.samsungknox.com
-0.0.0.0 crs.manage.samsungknox.com
 @@||orange.es^
 ############
 
